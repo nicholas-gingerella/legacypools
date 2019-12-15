@@ -27,6 +27,10 @@ html {
 	width:80;
 }
 
+#main_about {
+	margin-bottom: 20px;
+}
+
 #spash_logo {
 	width: 50%;
 }
@@ -51,6 +55,6 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.card-body .service-title {
+.service-title {
 	font-weight: bold;
 }
