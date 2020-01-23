@@ -38,7 +38,45 @@
 				<div class="col-lg-12 pageTitle text-center">
 					<h2>Contact Us</h2>
 					<hr>
-					<p>Feel free to call us!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+				<form class="needs-validation" action="https://formspree.io/xjvgjnvv" method="POST" novalidate>
+					<div class="form-group row">
+						<label for="contactName" class="col-1 col-form-label">Name</label>
+						<div class="col-12">
+							<input class="form-control" type="text" " id="contactName" name="name" required>
+							<div class="invalid-feedback text-left">Please provide a contact name</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="contactPhone" class="col-1 col-form-label">Telephone</label>
+						<div class="col-12">
+							<input class="form-control" type="tel" max-length="16" placeholder="XXX-XXX-XXXX" id="contactPhone" name="phone" pattern="\d{3}[\-]?\d{3}[\-]?\d{4}" required>
+							<div class="invalid-feedback text-left">Please provide a phone number we can reach you at in the following format: 555-555-5555</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="contactEmail" class="col-1 col-form-label">Email</label>
+						<div class="col-12">
+							<input class="form-control" type="email" placeholder="contact@email.com" id="contactEmail" name="email" required>
+							<div class="invalid-feedback text-left">Please provide a valid email address we can reach you at</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="contactComment" class="col-1 col-form-label">Comment</label>
+						<div class="col-12">
+							<textarea rows="5" class="form-control" placeholder="Tells us more about your pool needs" id="contactComment" name="comment" required></textarea>
+							<div class="invalid-feedback text-left">Please provide a comment describing your service inquiry</div>
+						</div>
+					</div>
+					<div class="form-group row text-center">
+						<div class="col-12">
+							<button type="submit" class="btn btn-primary">Send</button>
+						</div>
+					</div>
+				</form>
 				</div>
 			</div>
 		</div>
